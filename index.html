@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daybreak — Support</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --card: #f6f7f9;
+    --text: #1a1d24;
+    --dim: #5b616e;
+    --border: #e5e7eb;
+    --amber: #d98a1f;
+    --link: #c0621a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0d1a;
+      --card: #15182a;
+      --text: #f2f3f7;
+      --dim: #9aa0ae;
+      --border: rgba(255,255,255,0.08);
+      --amber: #ffb84d;
+      --link: #ffb84d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 48px 24px 80px; }
+  header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+  .mark {
+    width: 40px; height: 40px; border-radius: 10px;
+    background: linear-gradient(135deg, #ffb84d, #ff7361);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; flex-shrink: 0;
+  }
+  h1 { font-size: 1.9rem; margin: 0; letter-spacing: -0.02em; }
+  .tagline { color: var(--dim); margin: 4px 0 40px; font-size: 1.05rem; }
+  h2 { font-size: 1.25rem; margin: 40px 0 12px; letter-spacing: -0.01em; }
+  h3 { font-size: 1.02rem; margin: 24px 0 4px; }
+  p { margin: 0 0 14px; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    margin: 20px 0;
+  }
+  .contact-email { font-size: 1.15rem; font-weight: 600; }
+  .faq h3 { color: var(--text); }
+  .faq p { color: var(--dim); }
+  footer {
+    margin-top: 56px; padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--dim); font-size: 0.9rem;
+  }
+  footer a { color: var(--dim); text-decoration: underline; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="mark">🌅</div>
+      <h1>Daybreak</h1>
+    </header>
+    <p class="tagline">Support</p>
+
+    <p>Thanks for using Daybreak, the alarm that actually gets you out of bed. If something isn't working or you have a question, here's how to get help.</p>
+
+    <div class="card">
+      <p style="margin:0 0 6px; color: var(--dim);">Email support</p>
+      <p class="contact-email" style="margin:0;"><a href="mailto:jack@centerlinewealth.com">jack@centerlinewealth.com</a></p>
+      <p style="margin:12px 0 0; color: var(--dim); font-size: 0.92rem;">Please include your iPhone model and iOS version so we can help faster. We aim to reply within a few days.</p>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <h3>My alarm didn't ring</h3>
+      <p>The most common cause is the app being force-closed. Don't swipe Daybreak away in the app switcher the night before, keep your phone charging, and make sure Notifications are allowed for Daybreak in the Settings app.</p>
+
+      <h3>Why does the alarm play even when my phone is on silent?</h3>
+      <p>That's intentional. A normal notification stays muted on silent, so Daybreak plays your alarm through the app itself to make sure it wakes you. This is the whole point of the app.</p>
+
+      <h3>The step counter isn't moving</h3>
+      <p>The steps mission needs Motion &amp; Fitness access. Open the Settings app, find Daybreak, and turn on Motion &amp; Fitness. Note that iPhone counts steps in short bursts, so the number climbs in small jumps rather than one at a time.</p>
+
+      <h3>How do I delete an alarm?</h3>
+      <p>Swipe left on the alarm and tap Delete, or press and hold it and choose Delete.</p>
+
+      <h3>Can I use a song from my music library?</h3>
+      <p>Yes. When creating an alarm, tap Wake-up song and pick any track from your Apple Music or iTunes library. You can also choose one of the built-in tones.</p>
+    </div>
+
+    <footer>
+      <p>Daybreak for iPhone &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+  </div>
+</body>
+</html>
